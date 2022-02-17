@@ -1,5 +1,9 @@
 # practice-vuetify
 
+## Configuration
+Node v14.17.6
+
+
 ## Project setup
 ```
 npm install
