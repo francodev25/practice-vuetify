@@ -21,6 +21,7 @@
         mdi-chevron-right
       </v-icon>
     </v-btn> -->
+    This is home
   </v-container>
 </template>
 

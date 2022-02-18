@@ -48,6 +48,8 @@
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
+          router
+          :to="item.route"
         >
           <v-list-item-icon>
             <v-icon v-text="item.icon"></v-icon>
@@ -71,9 +73,8 @@ export default {
       drawer: true,
       selectedItem: 1,
       items: [
-        { text: 'Real-Time', icon: 'mdi-clock' },
-        { text: 'Audience', icon: 'mdi-account' },
-        { text: 'Conversions', icon: 'mdi-flag' },
+        { text: 'Home', icon: 'mdi-clock' ,route:'/' },
+        { text: 'About', icon: 'mdi-account'  ,route:'/about'},
       ],
     };
   },
