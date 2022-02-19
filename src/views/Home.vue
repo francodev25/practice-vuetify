@@ -1,37 +1,21 @@
 <template>
   <v-container>
-    <!-- <h1 class="red darken-2 green--text text--lighten-4">Home page</h1>
-    <p>YEs</p>
-    <h1 class="display-4">Massive Display</h1>
-    <h1 class="display-1">Massive Display</h1>
-
-    <p class="headline">This is a headline</p>
-    <p class="subheading">This subheading </p>
-    <p class="caption">This subheading </p>
-
-    <v-btn
-      :class="className"
-      class="ma-2 white--text"
-    >
-      Upload
-      <v-icon
-        right
-        dark
-      >
-        mdi-chevron-right
-      </v-icon>
-    </v-btn> -->
-    This is home
+    <h1 class="display-1">Welcome John!</h1>
+    <div class="d-flex">
+      <p>Here you are gonna see a Dashboard with some Analytics</p>
+    </div>
+    <ul>
+      <li>Task completed (Number)</li>
+      <li>About to Finish</li>
+      <li>Task to Do (Number)</li>
+      <li>Task in Progress</li>
+      <li>Last Init Session</li>
+    </ul>
   </v-container>
 </template>
 
 <script>
 export default {
   name: "Home",
-  data(){
-    return {
-      className: 'pink hidden-sm-only'
-    }
-  }
 };
 </script>
