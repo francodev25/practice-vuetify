@@ -60,12 +60,16 @@
         </v-list>
         <v-divider></v-divider>
 
-        <v-container id="logout__btn">
-          <v-btn color="blue darken-4" outlined small>
-            <span>Cerrar Sesión</span>
-            <v-icon v-text="'mdi-chevron-left'"></v-icon>
-          </v-btn>
-        </v-container>
+        <template v-slot:append>
+          <div class="pa-2">
+            <v-btn block color="blue darken-2" outlined>
+              <v-icon left>
+                mdi-logout-variant
+              </v-icon>
+              Logout
+            </v-btn>
+          </div>
+        </template>
       </v-navigation-drawer>
     </v-card>
   </nav>
@@ -79,11 +83,11 @@ export default {
       drawer: true,
       selectedItem: 1,
       items: [
-        { text: "Dashboard", icon: "mdi-home", route: "/" },
-        { text: "Tareas", icon: "mdi-check", route: "/tareas" },
-        { text: "Tableros", icon: "mdi-clock", route: "/tableros" },
-        { text: "Performance", icon: "mdi-account", route: "/performance" },
-        { text: "New Feature !", icon: "mdi-account", route: "/new-feature" },
+        { text: "Dashboard", icon: "mdi-view-dashboard", route: "/" },
+        { text: "Tareas", icon: "mdi-playlist-edit", route: "/tareas" },
+        { text: "Tableros", icon: "mdi-tab", route: "/tableros" },
+        { text: "Performance", icon: "mdi-poll", route: "/performance" },
+        { text: "New Feature !", icon: "mdi-new-box", route: "/new-feature" },
       ],
     };
   },
