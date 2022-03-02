@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import { Home,
+  NewFeature,
+  Performance,
+  Tableros,
+  Tareas,
+} from '@/views'
 
 Vue.use(VueRouter)
 
@@ -13,22 +18,22 @@ const routes = [
   {
     path: '/tareas',
     name: 'Tareas',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Tareas.vue')
+    component: Tareas
   },
   {
     path: '/tableros',
     name: 'Tableros',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Tableros.vue')
+    component: Tableros
   },
   {
     path: '/performance',
     name: 'Performance',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Performance.vue')
+    component: Performance
   },
   {
     path: '/new-feature',
     name: 'NewFeature',
-    component: () => import(/* webpackChunkName: "about" */ '../views/NewFeature.vue')
+    component: NewFeature
   }
 ]
 
