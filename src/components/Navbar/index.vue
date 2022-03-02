@@ -5,7 +5,7 @@
         color="white"
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
-      <v-app-bar-title class="text-uppercase white--text">
+      <v-app-bar-title class="text-uppercase white--text pr-4">
         <span class="font-weight-light">ToDO</span>
         <span>Fran</span>
       </v-app-bar-title>
