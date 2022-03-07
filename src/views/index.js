@@ -3,6 +3,7 @@ import NewFeature from './newfeature'
 import Performance from './performance'
 import Tableros from './tableros'
 import Tareas from './tareas'
+import Equipos from './equipos'
 
 
 
@@ -11,5 +12,6 @@ export {
     NewFeature,
     Performance,
     Tableros,
-    Tareas
+    Tareas,
+    Equipos
 }

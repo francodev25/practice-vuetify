@@ -88,6 +88,8 @@ export default {
         { text: "Tableros", icon: "mdi-tab", route: "/tableros" },
         { text: "Performance", icon: "mdi-poll", route: "/performance" },
         { text: "New Feature !", icon: "mdi-new-box", route: "/new-feature" },
+        { text: "Equipos", icon: "mdi-new-box", route: "/equipos" },
+
       ],
     };
   },

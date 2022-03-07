@@ -5,6 +5,7 @@ import { Home,
   Performance,
   Tableros,
   Tareas,
+  Equipos
 } from '@/views'
 
 Vue.use(VueRouter)
@@ -34,6 +35,11 @@ const routes = [
     path: '/new-feature',
     name: 'NewFeature',
     component: NewFeature
+  },
+  {
+    path: '/equipos',
+    name: 'Equipos',
+    component: Equipos
   }
 ]
 
