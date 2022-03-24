@@ -27,10 +27,14 @@
                 sm="6"
                 md="6"
               >
-                <v-text-field
-                  label="Id Externo"
-                  required
-                ></v-text-field>
+              <!--
+                Si le paso a value 0 me lo carga vacio
+                Si le paso un número es porque funciona como {id:1,text:"Franco"}
+               -->
+                <Autocomplete
+                  :value="0" 
+                  :label="'IdExterno'"
+                />
               </v-col>
               <v-col
                 cols="12"
@@ -125,7 +129,11 @@
 
 
 <script>
+import { Autocomplete } from '@/components'
   export default {
+    components:{
+Autocomplete
+    },
     data: () => ({
       dialog: false,
       SLA: ''
